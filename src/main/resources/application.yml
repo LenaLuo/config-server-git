@@ -1,0 +1,17 @@
+spring: 
+  application: 
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/LenaLuo/Config_Repo_Demo_I317066/
+          default-label: master
+          search-paths:
+            - repo 
+server:
+  port: 1201
+  
+management:
+  security:
+     enabled: false
